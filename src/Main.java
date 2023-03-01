@@ -7,6 +7,8 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
+
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -96,6 +98,18 @@ public class Main {
                 System.out.println("Сегодня пятница, " + i + "-e число. Необходимо подготовить отчет");
             }
             countToNextFriday++;
+        }
+    } // End of task
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int cometTurnoverPeriod = 79;
+        int beginingOfPeriod = 2023 - 200;
+        int endOfPeriod = 2023 + 100;
+        for (int year=beginingOfPeriod; year <= endOfPeriod; year++) {
+            if (year % cometTurnoverPeriod == 0) {
+                System.out.println(year);
+            }
         }
     } // End of task
 
