@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -81,6 +82,20 @@ public class Main {
             if (i % 6 == 0) {
                 System.out.println("Месяц = " + i + ", сумма вклада = " + deposit + " рублей");
             }
+        }
+    } // End of task
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int firstFridayInMonth = 7;
+        int daysInMonth = 31;
+        int countToNextFriday = 0;
+
+        for (int i=firstFridayInMonth; i <= daysInMonth; i++) {
+            if (countToNextFriday % 7 == 0) {
+                System.out.println("Сегодня пятница, " + i + "-e число. Необходимо подготовить отчет");
+            }
+            countToNextFriday++;
         }
     } // End of task
 
