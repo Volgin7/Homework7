@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -25,9 +26,21 @@ public class Main {
             i++;
         }
         System.out.println();
-
-        for (i = 10; i  >= 1; i--) {
+        for (i = 10; i >= 1; i--) {
             System.out.print(i + " ");
+        }
+    } // End of task
+
+    public static void task3() {
+        System.out.println("Задача 3");
+        int population = 12_000_000;
+        int birthRate = 17;
+        int deathRate = 8;
+        int growthRate = birthRate - deathRate;
+
+        for ( int i=1; i <= 10; i++) {
+            population += population * growthRate / 1_000;
+            System.out.println("Год " + i + ", численность населения составляет " + population);
         }
     } // End of task
 
